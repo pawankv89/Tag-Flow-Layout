@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gld-ax-Ji7" customClass="TagCell" customModule="Tag_Flow_Layout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TagName" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-RC-hna">
+                    <rect key="frame" x="10" y="10" width="281" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="304" id="aFC-Bn-hr2"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="o4Z-gQ-ykA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gxh-RC-hna" firstAttribute="top" secondItem="gld-ax-Ji7" secondAttribute="top" constant="10" id="0vs-3B-ZAh"/>
+                <constraint firstAttribute="bottom" secondItem="Gxh-RC-hna" secondAttribute="bottom" constant="10" id="Yag-6W-XIm"/>
+                <constraint firstAttribute="trailing" secondItem="Gxh-RC-hna" secondAttribute="trailing" constant="10" id="tMG-yP-qqj"/>
+                <constraint firstItem="Gxh-RC-hna" firstAttribute="leading" secondItem="gld-ax-Ji7" secondAttribute="leading" constant="10" id="wmC-Rb-7Wk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0pW-xu-o3e"/>
+            <connections>
+                <outlet property="tagName" destination="Gxh-RC-hna" id="6B5-YX-E55"/>
+            </connections>
+            <point key="canvasLocation" x="181.5" y="136"/>
+        </view>
+    </objects>
+</document>
